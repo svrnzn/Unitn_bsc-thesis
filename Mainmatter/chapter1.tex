@@ -1,79 +1,92 @@
-\chapter{The EPR program}
+\chapter{The EPR ``theorem''}
 
-The first section of this chapter will concern the argument brought foreward by Einstein, Podolsky and Rosen in their article \cite{PhysRev.47.777}, in particular the adaptation of the argument proposed by Bohm in \cite{bohm1951quantum} will be treated (see also \cite{PhysRev.108.1070}).
-It will be shown that under reasonable assumptions, regarding the locality of physical processes and reality, the quantum description of reality is incomplete (i.e. there exists \textit{elements of physical reality} for which there is no couterpart in the formalism). TO REVISE
+In this chapter...
 
-In the last section of the chapter some of Bell's contributions on the matter will be presented. In particular...
-
-
-\section{EPR ``theorem''}
+\section{Perfect correlations in systems of two spin-1/2 particles}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.25\textwidth]{Mainmatter/Chapter1/eprb.png}
-  \caption{Bohm's adaptation of EPR's gedankenexperiment. Two spin-1/2 particles  emitted by the source (in the singlet state of spin)...}
-  \label{fig:eprb-gedankenexp}
+  \includegraphics[width=0.275\textwidth]{Mainmatter/Chapter1/eprb-gedankenexperiment.png}
+  \caption{}
+  \label{fig:eprb-gedankenexperiment}
 \end{figure}
 
-\subsection*{EPRB gedankenexperiment}
+In this section we will present some aspects of the quantum mechanical description of systems composed of two spin-1/2 particles. In particular we will show that there exist situations for which quantum mechanics predicts perfect correlations between the results of measurements performed on the two particles. We will also see that such correlations are independent of where and when the two measurements are performed.%is it clear enough that the two measurements are made on the two particles separately?
 
-Consider a system composed of two spin-1/2 particles flying off a source in opposite directions as shown in Fig. \ref{fig:eprb-gedankenexp}. Suppose that the two particles are emitted by the source in the state with total spin equal to $0$, that is in the state:
+Consider for instance two spin-1/2 particles emited at a source and propagating in opposite directions along the $\mathbf{\hat{z}}$ axis (see Fig. \ref{fig:eprb-gedankenexperiment}).  Each particle then enters an apparatus (e.g. a Stern-Gerlach magnet) that can measure either the $S_x$ or $S_y$ spin component. Suppose that the two particles are emited in the state with total spin equal to $0$, that is:
 \begin{equation}
-  |\Psi\rangle = \frac{1}{\sqrt{2}} \left( |S_z = + 1\rangle_1 |S_z = - 1\rangle_2 - |S_z = - 1\rangle_1 |S_z = + 1\rangle_2 \right)
+  |\chi\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle_1 |-\rangle_2 - |-\rangle_1 |+\rangle_2 \right)
   \label{eq:singlet-state}
 \end{equation}
-Once the two particles are far from each other they enter two apparatuses which can measure either $S_x$ or $S_y$ (e.g. two Stern-Gerlach apparatuses with magnetic fields oriented either in the $\hat{\textbf{x}}$ or $\hat{\textbf{y}}$ direction).
+where the vectors $|+\rangle_i$ and $|-\rangle_i$ represent, respectively, states of spin up and down along an arbitrary direction $\mathbf{\hat{n}}$ for particle $i = 1, 2$. The state (\ref{eq:singlet-state}) is such as to take the same form indipendently of $\mathbf{\hat{n}}$, thus no ambiguity arises from omitting the direction $\mathbf{\hat{n}}$ in the notation (see Appendix \ref{app:spin-rotations} for a proof of this statement). This last statement also allows us to easily see that if the two measuring apparatuses happen to be oriented in the same direction, that is if they both measure either the $S_x$ or $S_y$ spin component, then the spins of the two particles will be found to have opposite sign.
 
-Let us see what the prediction of quantum mechanics for such an experiment are, in particular we are interested in the (perfect) correlation between the result of the measurement performed on the particle propagating in the positive $\hat{\textbf{z}}$ direction (which we will call particle A from now on) with that on the particle propagating in the negative $\hat{\textbf{z}}$ direction (particle B).
+\begin{observation}
+  Notice that the perfect correlations we have predicted in this section are independent on the time order with which we perform the two measurements as well as on the distance between the places where the two measuring apparatuses are located.%should I add something like: ``as long as the spin state doesn't change''?
+\end{observation}
 
-REPHRASING NEEDED
+\begin{observation}
+  The appearence of correlations between the results of the two spin measurements considered are ENTANGLEMENT.
+\end{observation}
 
-Suppose that both apparatuses are set to measure $S_x$, to obtain the prediction it is convenient to express the state (\ref{eq:singlet-state}) on a basis of eigenvectors of the $S_x$ observable. It turns out that the state in question takes the same form on any basis of the spin space (see Appendix \ref{app:spin-rotations}), and thus:
-\begin{equation*}
-  |\Psi\rangle = \frac{1}{\sqrt{2}} \left( |S_x = + 1\rangle_1 |S_x = - 1\rangle_2 - |S_x = - 1\rangle_1 |S_x = + 1\rangle_2 \right)
-\end{equation*}
-We can see that if the particle propagating in the positive $\hat{\textbf{z}}$ direction is found to have $S_x = + 1$ ($S_x = - 1$) then the other particle will be found to have $S_x = - 1$ ($S_x = + 1$).
-We have just said that the state (\ref{eq:singlet-state}) takes the same form on any basis of the spin space, thus if both apparatuses are set to measure $S_y$ we obtain analogous results.
+\begin{observation}
+  In this section we made use of labels for the two particles.
+SPATIAL PART OF THE WAVEFUNCTION
+\end{observation}
 
-\subsection*{EPR argument}
 
-In the previous paragaph we have only presented some aspects of the quantum mechanical description of systems composed of two spin-1/2 particles. We are now ready to present the EPR argument.
-Let us start by listing the assumptions on which the argument rests:
+\section{EPR argument}
+In this section we will present the argument proposed by Einstein, Podolsky and Rosen \cite{PhysRev.47.777} to prove that quantum mechanics is incomplete.
+
+\begin{note}
+Throughout the presentation of the argument we will refer to the experimental conditions considered in the previous section.
+\end{note}
+
+Let us start by stating clearly all the assumtions on which the argument rests. The first of these is the prediction of quantum mechanics we have derived in the previuos section, that is:
 \begin{enumerate}
   %enumerated lists style
   \renewcommand{\theenumi}{\alph{enumi}}
   \renewcommand{\labelenumi}{(\theenumi)}
-\item \label{itm:perfect-correlations} \textit{Perfect correlation:} If the spins of the two particles are measured along the same direction, then the two spins will be found (with certainity) to have opposite sign.
-\item \label{itm:epr-locality} \textit{Locality:} ``Since at the time of measurement the two systems no longer interact, no real change can take place in the second system in consequence of anything that may be done to the first system.''
-\item \label{itm:epr-reality} \textit{Reality:} ``If, without in any way disturbing a system, we can predict with certainity (i.e. with probability equal to unity) the value of a physical quantity, then there exist an element of physical reality corresponding to this physical quantity.'' ADD SOMETHING HERE
-\item \label{itm:epr-completeness} \textit{Completeness:} ``Every element of the physical reality must have a counterpart in the [complete] physical theory.''
+\item \label{itm:epr-perfect-correlations} \textit{Perfect correlation:} If the spins of the two particles are measured along the same direction, then the two spins will be found (with certainity) to have opposite sign (independently of the time order and spatial distance at which the two measurements are performed).
 \end{enumerate}
-The first of these assumptions, as we have seen, is a prediction of quantum mechanics. The three latter ones are reasonable propositions about locality, reality and completeness of a physical theory which we have quoted from the original article by Einstein, Podolsky and Rosen \cite{PhysRev.47.777}.
+We then assume the validity of the following (necessary) requirement for a theory to be complete:
+\begin{enumerate}
+  \setcounter{enumi}{1}
+  %enumerated lists style
+  \renewcommand{\theenumi}{\alph{enumi}}
+  \renewcommand{\labelenumi}{(\theenumi)}
+\item \label{itm:epr-completeness} \textit{Completeness:} ``Every element of the physical reality must have a counterpart in the [complete] physical theory.'' \cite{PhysRev.47.777}
+\end{enumerate}
+Where to identify the \textit{elements of the physical reality} we assume the validity of the (sufficient) criterion that follows:
+\begin{enumerate}
+  \setcounter{enumi}{2}
+  %enumerated lists style
+  \renewcommand{\theenumi}{\alph{enumi}}
+  \renewcommand{\labelenumi}{(\theenumi)}
+\item \label{itm:epr-reality} \textit{Reality:} ``If, without in any way disturbing a system, we can predict with certainity (i.e. with probability equal to unity) the value of a physical quantity, then there exist an element of physical reality corresponding to this physical quantity.'' \cite{PhysRev.47.777}
+\end{enumerate}
+At last we assume that the two measuring apparatuses are very far form each other, thus, again in EPR words \cite{PhysRev.47.777}:
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  %enumerated lists style
+  \renewcommand{\theenumi}{\alph{enumi}}
+  \renewcommand{\labelenumi}{(\theenumi)}
+\item \label{itm:epr-locality} \textit{Locality:} ``Since at the time of measurement the two systems [the two particles in our case] no longer interact, no real change [\footnote{By ``real change'' we mean changes to the \textit{elements of the physical reality}}] can take place in the second system in consequence of anything that may be done to the first system.''
+\end{enumerate}
 
-The agrument is then the following:
-\begin{enumerate*}
-\item Perfect correlations, (\ref{itm:perfect-correlations}), allow us to predict \textit{with certainity} the outcome of a spin component measurement on the particle B by first measuring the same spin component on particle A;
-\item Because of locality, (\ref{itm:epr-locality}), the measurement performed on particle A cannot cause a change on particle B.
-\item By reality, (\ref{itm:epr-reality}), we can state that the spin component considered is an element of physical reality.
-\item We observe that the previous points in the argument hold for both $S_x$ and $S_y$, we must thus admit that the two spin components are both \textit{elements of physical reality} with a definite value. Since there is no state in quantum mechanics in which both spins have definite value we conclude that the quantum mechanicsl description of reality is incomplete.
-\end{enumerate*}
-
-THE WORD ENTANGLEMENT NEVER COMES UP
+The argument is then the following: Suppose a spin component, say $S_x$ ($S_y$), of particle 1 is measured at some time $t_1$, because of the perfect correlation assumption (\ref{itm:epr-perfect-correlations}), we know that if at some time $t_2 > t_1$ the same spin component of particle 2 is measured it will be found (with certainity) to have opposite sign. Locality, (\ref{itm:epr-locality}), ensures that the elements of physical reality associated to particle 2 have not changed as a consequnce of the measurement performed on particle 1. Thus, by the reality assumption (\ref{itm:epr-reality}), there is an element of physical reality corresponding to the $S_x$ ($S_y$) physical quantity of particle 2. Using again (\ref{itm:epr-locality}) we can state that such element of physical reality existed before the measurement on particle 1 was performed. Exchanging the role of the two particles in the previous steps leads to the conclusion that there corresponds an element of physical reality also to the $S_x$ ($S_y$) physical quantity of particle 1, this element of physical reality too existed before \textit{any} measurement was performed. We have thus obtained that the results of the two measurements were predetermined. Since the quantum state considered, (\ref{eq:singlet-state}), does not determine the result of the two measurements, we conclude that the theory ignores the elements of reality whe have found to exist and, by completeness (\ref{itm:epr-completeness}), must be considered incomplete. This completes the proof of the EPR ``theorem''.%is the final step clear enough or is it better to go Laloe's way? - is the S_y thing clear enough? - is it clear that the state considered at the beginning is the singlet one?
 
 \begin{observation}
-The agrument presented here is not the original argument that Einstein, Podolsky and Rosen present in their article \cite{PhysRev.47.777}. The difference being...
+  ORIGINAL EPR: NO INTERACTION VS LOCALITY - FINAL PART OF THE ARGUMENT DIFFERS
 \end{observation}
 
 \begin{observation}
-  From the results derived in Appendix \ref{app:spin-rotations} it can easily be seen that the argument is more general. In particular it can be shown that the result is not limited to the $\hat{\bftext(x}}$ and $\hat{\bftext(y}}$ components of spin and the argument applies to any component of spin. Hence any component of spin is an \textit{element of physical reality}
+  ELEMENTS OF PHYSICAL REALITY CANNOT BE IN MEASURING APPARATUS \cite{}
 \end{observation}
 
-\subsection{Consequences of EPR's result}
-The EPR argument 
+\begin{observation}
+  ASSOCIATED VS SPACE REGION - SEPARABILITY
+\end{observation}
 
-They don't give a completation
-
-\section{How Bell introduced EPR elements of reality into the formalism}
-
-
-Bell could derive experimentally testable inequalities... ...we are not going to present here (references)
+\begin{observation}
+  DEPENDENCE ON MEASURING APPARATUS SETTINGS
+\end{observation}

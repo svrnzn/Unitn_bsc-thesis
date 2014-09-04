@@ -1,0 +1,42 @@
+\documentclass[a4paper,twoside, 11pt]{report}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[inline]{enumitem}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage{verbatim}%used for block comments
+
+\newtheorem{observation}{Observation}
+\newtheorem{note}{Note}
+
+
+\begin{document}
+
+%frontmatter
+
+%\include{Frontmatter/cover}
+
+\onehalfspacing%sets interline spacing to 1.5 from here onwards, consider doing it with \linespread{}
+
+%\copyrightpage
+%\abstractpage
+\include{Frontmatter/preface}
+\tableofcontents
+%\acknowledgments
+%\include{Frontmatter/notation}
+
+%mainmatter
+
+\include{Mainmatter/chapter1}
+\include{Mainmatter/chapter2}
+
+\appendix
+\include{Mainmatter/appendix1}
+
+%backmatter
+
+\include{Backmatter/bibliography}
+
+\end{document}
