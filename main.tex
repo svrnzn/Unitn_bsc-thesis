@@ -1,4 +1,5 @@
-\documentclass[a4paper,twoside, 11pt]{report}
+\documentclass[a4paper, twoside, 11pt]{book}
+\usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{setspace}
@@ -8,27 +9,29 @@
 
 \usepackage{verbatim}%used for block comments
 
+
+\newtheorem{remark}{Remark}
 \newtheorem{observation}{Observation}
 \newtheorem{note}{Note}
+\newtheorem{theorem}{Theorem}
 
+\pagestyle{plain}%used to clear header with chapter and section titles
 
 \begin{document}
 
-%frontmatter
-
+\frontmatter
 %\include{Frontmatter/cover}
 
 \onehalfspacing%sets interline spacing to 1.5 from here onwards, consider doing it with \linespread{}
 
 %\copyrightpage
-%\abstractpage
-\include{Frontmatter/preface}
+%\include{Frontmatter/preface}
 \tableofcontents
 %\acknowledgments
 %\include{Frontmatter/notation}
 
 %mainmatter
-
+\mainmatter
 \include{Mainmatter/chapter1}
 \include{Mainmatter/chapter2}
 

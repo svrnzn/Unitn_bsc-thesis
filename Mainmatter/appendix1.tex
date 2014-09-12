@@ -1,0 +1,54 @@
+\chapter[Appendix]{}
+\label{app:spin-predictions}
+
+\section{Singlet state representation on different bases}
+We prove here that the state of equation (\ref{eq:singlet-state}) takes the same form on all orthonormal bases of the $S_x$, $S_y$ and $S_z$ observables.
+
+Let us prove that the state:
+\begin{equation}
+  |\chi\rangle_{\mathbf{\hat{z}}} = \frac{1}{\sqrt{2}} \left( |\mathbf{\hat{z}}, +\rangle_1 |\mathbf{\hat{z}}, -\rangle_2 - |\mathbf{\hat{z}}, -\rangle_1 |\mathbf{\hat{z}}, +\rangle_2 \right)
+  \label{eq-singlet-state-z}
+\end{equation}
+has the same form on the tensor basis obtained from the two bases $\left( |\mathbf{\hat{x}}, +\rangle_i, |\mathbf{\hat{x}}, -\rangle_i \right), i = 1, 2$ the same argument can be adapted to the $\mathbf{\hat{y}}$ case.
+
+Let us write the $S_x$ operator as a $2 \times 2$ matrix on the $\left( |\mathbf{\hat{z}}, +\rangle_i, |\mathbf{\hat{z}}, -\rangle_i \right)$ basis:
+\begin{equation*}
+  S_x =
+  \begin{pmatrix}
+    0 & 1\\
+    1 & 0
+  \end{pmatrix}
+\end{equation*}
+in units $\frac{\hbar}{2} = 1$. This operator can be diagonalized leading to the eigenvectors:
+\begin{equation}
+  \begin{split}
+    |\mathbf{\hat{x}}, +\rangle_i &= \frac{1}{\sqrt{2}} \left( |\mathbf{\hat{z}}, +\rangle_i + |\mathbf{\hat{z}}, -\rangle_i \right),\\
+    |\mathbf{\hat{x}}, -\rangle_i &= \frac{1}{\sqrt{2}} \left( |\mathbf{\hat{z}}, +\rangle_i - |\mathbf{\hat{z}}, -\rangle_i \right)
+  \end{split}
+  \label{eq:sx-eingenvectors}
+\end{equation}
+with eigenvalues $+ 1$ and $- 1$ respectively. Inverting the two equations (\ref{eq:sx-eingenvectors}) and substituting into (\ref{eq-singlet-state-z}) leads to the desired result.
+
+\section{Quantum mechanical predictions on GHZ states}
+We derive here the predictions of quantum mechnics of which we made use in Chapter \ref{chap:ghz-theorem}. Namely, we will show that the state of equation (\ref{eq:ghz-state}), i.e.:
+\begin{equation*}
+  |\chi\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3 \right),
+\end{equation*}
+is an eigenstate of all of the observables (\ref{eq:xyy-observables}), i.e.:
+\begin{equation}
+  \begin{split}
+    S_{1x} \times S_{2y} \times S_{3y}\\
+    S_{1y} \times S_{2x} \times S_{3y}\\
+    S_{1y} \times S_{2y} \times S_{3x}
+  \end{split}
+  \label{eq:xyy-operators-app}
+\end{equation}
+with eigenvalue $+ 1$ and it is also eigenstate of the observable:
+\begin{equation*}
+  S_{x1} \times S_{2x} \times S_{3x}
+\end{equation*}
+this time with eigenvalue $- 1$.
+
+Let us prove this statement for the first observable in (\ref{eq:xyy-operators-app}) the same argument can be adapted to the other observables.
+
+BETTER DO IT ONCE CHAPTER 3 IS DONE, YOU MIGHT BE BETTER OFF WITH A MORE GENERAL PROOF
