@@ -30,9 +30,9 @@ in units $\frac{\hbar}{2} = 1$. This operator can be diagonalized leading to the
 with eigenvalues $+ 1$ and $- 1$ respectively. Inverting the two equations (\ref{eq:sx-eingenvectors}) and substituting into (\ref{eq-singlet-state-z}) leads to the desired result.
 
 \section{Quantum mechanical predictions on GHZ states}
-We derive here the predictions of quantum mechnics of which we made use in Chapter \ref{chap:ghz-theorem}. Namely, we will show that the state of equation (\ref{eq:ghz-state}), i.e.:
+We derive here the predictions of quantum mechanics of which we made use in Chapter \ref{chap:ghz-theorem}. Namely, we will show that the state of equation (\ref{eq:ghz-state}), i.e.:
 \begin{equation*}
-  |\chi\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3 \right),
+  |\chi\rangle = |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3
 \end{equation*}
 is an eigenstate of all of the observables (\ref{eq:xyy-observables}), i.e.:
 \begin{equation}
@@ -49,6 +49,30 @@ with eigenvalue $+ 1$ and it is also eigenstate of the observable (\ref{eq:xxx-o
 \end{equation*}
 this time with eigenvalue $- 1$.
 
-Let us prove this statement for the first observable in (\ref{eq:xyy-operators-app}) the same argument can be adapted to the other observables.
-
-BETTER DO IT ONCE CHAPTER 3 IS DONE, YOU MIGHT BE BETTER OFF WITH A MORE GENERAL PROOF
+Let us prove this statement for the first observable in (\ref{eq:xyy-operators-app}) the same argument can be adapted to the other observables. We begin with the spin of particle 1:
+\begin{equation*}
+  \begin{split}
+    S_{1-} |\chi\rangle &= 2 |-\rangle_1 |+\rangle_2 |+\rangle_3\\
+    S_{1+} |\chi\rangle &= - 2 |+\rangle_1 |-\rangle_2 |-\rangle_3
+  \end{split}
+\end{equation*}
+that gives:
+\begin{equation*}
+  |\chi\rangle' := S_{1x} |\chi\rangle = |-\rangle_1 |+\rangle_2 |+\rangle_3 - |+\rangle_1 |-\rangle_2 |-\rangle_3.
+\end{equation*}
+For particle 2 we have:
+\begin{equation*}
+  \begin{split}
+    S_{2-} |\chi\rangle' &= 2 |-\rangle_1 |-\rangle_2 |+\rangle_3\\
+    S_{2+} |\chi\rangle' &= - 2 |+\rangle_1 |+\rangle_2 |-\rangle_3
+  \end{split}
+\end{equation*}
+thus:
+\begin{equation*}
+  |\chi\rangle'' := S_{2y} |\chi\rangle' = - \frac{1}{i} |+\rangle_1 |+\rangle_2 |-\rangle_3 + |-\rangle_1 |-\rangle_2 |+\rangle_3.
+\end{equation*}
+The same goes through for particle 3 and leads to:
+\begin{equation*}
+  |\chi\rangle''' := S_{3y} |\chi\rangle'' = |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3 = |\chi\rangle.
+\end{equation*}
+which is the desired result.
