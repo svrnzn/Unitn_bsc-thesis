@@ -30,12 +30,13 @@ where $i = x, y$ denotes the spin component (of particle 1) measured. Analogousl
 
 In writing $A_i(\lambda)$ and $B_j(\lambda)$ this way we have implicitly fulfilled a request that comes from locality, that is: the result of a measurement of a spin component on particle 1 does not depend on the spin component of particle 2 that is measured (i.e. $A$ depends on $i$ only and not on $j$), conversely $B$ only depends on $j$ and not on $i$.%is some better explenation needed here?
 
-\begin{observation}
-Working on the objects just presented Bell \cite{Bell1964} could derive a contradiction between the EPR assumptions ((\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality})) and statistical predictions of quantum mechanics. We will not present his argument here as we will focus on a more recent result on the same matter.
-\end{observation}
+\begin{remark}
+  \label{rem:well-def-ab}
+  It is easy to see that the perfect correlation assumption ``only'' implies that (\ref{eq:results-particle-1}) and (\ref{eq:results-particle-2}) hold on a subset of $\lambda$'s of measure unity. We will come back to this in due time.
+\end{remark}
 
 \begin{observation}
-  HERE GOES A COMMENT ABOUT THE WELL DEFINITENESS OF THE FUNCTIONS A, B. THEY ARE WELL DEFINED ``ONLY'' ALMOST EVERYWHERE (see note 14 on ghz article).
+Working on the objects just presented Bell \cite{Bell1964} could derive a contradiction between the EPR assumptions ((\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality})) and statistical predictions of quantum mechanics. We will not present his argument here as we will focus on a more recent result on the same matter.
 \end{observation}
 
 
@@ -71,6 +72,7 @@ Once again we can observe that the result of a measurement on one of the particl
 \end{enumerate}
 The EPR argument presented in section \ref{epr-argument} can then be adapted to these assumptions and thus we conclude that in this case too there exists a more complete specification of the physical reality. If once again we denote this more complete specification by $\lambda$ we also conclude that the results of spin component measurements on particles 1, 2 and 3, respectively $A$, $B$ and $C$, are functions of the spin component being measured and of $\lambda$:%dependence on component to uniform with previous section
 \begin{equation}
+  \label{eq:results-abc}
   \begin{split}
       A = A_i(\lambda)\\
       B = B_j(\lambda)\\
@@ -81,9 +83,10 @@ where $i, j, k = x, y$ denote the spin component.%is better wording needed?
 
 In this case also, locality demands that $A$ doesn't depend on the spin components of particles 2 and 3 that are measured, i.e. $A$ cannot depend on $j$ and $k$. Similarly $B$ cannot depend on $i$ and $k$ and $C$ cannot depend on $i$ and $j$.
 
-\begin{observation}
-  HERE AGAIN GOES A COMMENT ABOUT THE WELL DEFINITENESS OF THE FUNCTIONS A, B AND C.
-\end{observation}
+\begin{remark}
+  \label{rem:well-def-abc}
+  The same as in Remark \ref{rem:well-def-ab} holds for the functions in (\ref{eq:results-abc}).
+\end{remark}
 
 
 \section{GHZ argument}
@@ -122,9 +125,14 @@ We have thus obtained a contradiction that can be summarized in the following:
   \end{enumerate}
 \end{theorem}
 
-\begin{observation}
-  HERE GOES A COMMENT ABOUT WHAT THE ROLE OF LOCALITY AND REALITY HAVE IN THE ARGUMENT. LALOE PG 40.
-\end{observation}
+\begin{remark}
+  We have seen in Remark \ref{rem:well-def-abc} that the functions $A$, $B$ and $C$ need to be well defined ``only'' on a subset of $\lambda$'s of measure unity. However, since finite unions of sets of measure zero also have measure zero, the equations in (\ref{eq:xyy-local-realist-results}) and (\ref{eq:xxx-local-realist-result}) also hold on a set of $\lambda$'s of measure one.
+\end{remark}
+
+%\begin{observation}
+%  We could try to investigate further where exactly the conflict between quantum mechanics and the requests of locality and reality arises.
+%  HERE GOES A COMMENT ABOUT WHAT THE ROLE OF LOCALITY AND REALITY HAVE IN THE ARGUMENT. LALOE PG 40.
+%\end{observation}
 
 \begin{note}%don't like where this note is.
   \ref{itm:ghz-theorem-locality} and \ref{itm:ghz-theorem-reality} together are referred to as local-realism.

@@ -25,7 +25,7 @@ In this section we will present an experimental approach that has actually been 
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{Mainmatter/Chapter3/ghz-entanglement.png}
-  \caption{Experimental set-up for GHZ entanglement demonstration}
+  \caption{Experimental set-up for GHZ entanglement demonstration.}
   \label{fig:ghz-entanglement}
 \end{figure}
 
@@ -86,7 +86,7 @@ Experimental demonstration of GHZ entanglement obtained by means of the procedur
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.625\textwidth]{Mainmatter/Chapter3/ghz-entanglement-exp-proof.png}
+  \includegraphics[width=0.6\textwidth]{Mainmatter/Chapter3/ghz-entanglement-exp-proof.png}
   \caption{``Experimental confirmation of GHZ entanglement. Graph (a) shows the results obtained for polarization analysis of the photon at $D_3$, conditioned on the trigger, and the detection of one photon at $D_1$ polarized at $+ 45^\circ$ and one photon at $D_2$ polarized at $- 45^\circ$. The two curves show the fourfold coincidences for a polarizer oriented at $+ 45^\circ$ and $- 45^\circ$, respectively, in front of detector $D_3$ as a function of the spatial delay in path $a$. The difference between the two curves at zero delay confirms the GHZ entanglement. By comparison [graph (b)] no such intensity difference is predicted if the polarizer in front of the detector $D_1$ is set at $0^\circ$.'' \cite{PhysRevLett.82.1345}}
   \label{fig:ghz-entanglement-exp-proof}
 \end{figure}
@@ -97,7 +97,7 @@ First of all it is demonstrated that only the two components (\ref{eq:hhv-state}
 \end{equation*}
 that takes the following form when written on the $( |+ 45^\circ\rangle_i, |- 45^\circ\rangle_i), i = 2, 3$ basis:
 \begin{equation*}
-    \frac{1}{\sqrt{2}} |H\rangle_T |+ 45^\circ\rangle_1 \left( |+ 45^\circ\rangle_2 |+ 45^\circ\rangle_3 - |- 45^\circ\rangle_2 |+ 45^\circ\rangle_3 \right).
+    \frac{1}{\sqrt{2}} |H\rangle_T |+ 45^\circ\rangle_1 \left( |+ 45^\circ\rangle_2 |+ 45^\circ\rangle_3 - |- 45^\circ\rangle_2 |- 45^\circ\rangle_3 \right).
 \end{equation*}
 The terms involving $|+ 45^\circ\rangle_2 |- 45^\circ\rangle_3$ and $|- 45^\circ\rangle_2 |+ 45^\circ\rangle_3$ interfere destructively, thus their absence indicates the coherent superposition of terms in (\ref{eq:trigger+hv-ghz-state}).
 
@@ -106,12 +106,35 @@ To show that it is the ``which-path'' information that destroys coherence measur
 Fig. \ref{fig:ghz-entanglement-exp-proof} reports experimental results regarding the polarization of photon 3 for fourfold events in which photon 1 and 2 are polarized at $+ 45^\circ$ and $- 45^\circ$ respectively. Squares refer to $- 45^\circ$ polarization and circles to $+ 45^\circ$ polarization.
 
 \begin{observation}
-  ANALOGY WITH DOUBLE SLIT QUANTUM ERASER EXPERIMENT
+  The argument presented above and the subsequent experimental demonstration show that entanglement doesn't necessarily arise from interaction of the entangles subsystems. We want to give here a general illustration of such a fact taken from \cite{NYAS:NYAS91}.
+
+Consider the factorized two particle state:
+\begin{equation}
+  |\psi\rangle = |\alpha\rangle_1 |\beta\rangle_2
+  \label{eq:factorized-state}
+\end{equation}
+and the entangled state:
+\begin{equation}
+  |\Psi\rangle = \frac{1}{\sqrt{2}} \left( |a\rangle_1 |b\rangle_2 + |c\rangle_1 |d\rangle_2\right)
+  \label{eq:entangled-state}
+\end{equation}
+where, for simplicity, $\langle a | c \rangle = \langle b | d \rangle = 0$.
+Then, if (\ref{eq:factorized-state}) is not orthogonal to (\ref{eq:entangled-state}), it is possible to obtain an entangled state from (\ref{eq:factorized-state}) using the projection operator:
+\begin{equation}
+  P = |\Psi\rangle \langle\Psi|.
+  \label{eq:projector}
+\end{equation}
+
+The experiment presented in this section can be seen as an actual realization of a projector of the type (\ref{eq:projector}). Another example of such a projector that has been experimentally realized is the one used in entanglement swapping experiments which is described in \cite{NYAS:NYAS91}.
 \end{observation}
+
+%\begin{observation}
+%  ANALOGY WITH DOUBLE SLIT QUANTUM ERASER EXPERIMENT
+%\end{observation}
 
 
 \subsection{Claims regarding local-realism and quantum mechanics}
-The experimental observations and analysis we have reported in the previous subsection are not sufficient to make statements against or in favor of local-realism (or quantum mechanics).
+The experimental observations and analysis we have reported in the previous subsection are not sufficient to make statements against or in favor of local-realism (or quantum mechanics). For example the experimental procedure might be put into question because of the selection needed to isolate fourfold coincidences.
 
 However it has been shown in \cite{PhysRevA.61.022109} that a more refined analysis of the experiment we have presented, together with some additional operational requirements, leads to the possibility of observing violations of local-realism (or of quantum mechanics). In fact claims of having observed such violations (of local-realism) have been made \cite{Nature.403.515}.
 
