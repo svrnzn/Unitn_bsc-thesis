@@ -5,7 +5,7 @@ In this chapter we will present an argument to show that the criticism leveled a
 The first result of this type is due to John S. Bell and is presented in his work of 1964 \cite{Bell1964}. This thesis will not be concerned with Bell's reasoning but will rather illustrate a more recent argument that leads to the conclusion that EPR's premises are inconsistent when applied to systems of three particles. This argument was proposed by Daniel M. Greenberg, Michael A. Horne and Anton Zeilinger in 1989 \cite{ghz1989} (see also \cite{:/content/aapt/journal/ajp/58/12/10.1119/1.16243}).
 
 
-\section{Summary and formalization of EPR results}
+\section{Bell's formalization of EPR results}
 This section serves us to introduce the notation we will use to expose the main matter of this chapter, no new result will be derived here.
 
 In the previous chapter starting from the assumptions of perfect correlation (\ref{itm:epr-perfect-correlation}), completeness (\ref{itm:epr-completeness}), reality (\ref{itm:epr-reality}) and locality (\ref{itm:epr-locality}) we proved the following results:
@@ -36,13 +36,36 @@ In writing $A_i(\lambda)$ and $B_j(\lambda)$ this way we have implicitly fulfill
 \end{remark}
 
 \begin{observation}
-Working on the objects just presented Bell \cite{Bell1964} could derive a contradiction between the EPR assumptions ((\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality})) and statistical predictions of quantum mechanics. We will not present his argument here as we will focus on a more recent result on the same matter.
+Working on the objects just presented Bell \cite{Bell1964} could derive an inequality that is violated by statistical predictions of quantum mechanics (i.e. Bell derived a contradiction between the EPR assumptions (\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality}) and statistical predictions of quantum mechanics). Here we report both Bell's inequality and an example of contradiction with quantum mechanics without derivation as we will then focus on a more recent argument on the same matter.
+
+Let $\mathbf{\hat{u}}$ and $\mathbf{\hat{v}}$ be two arbitrary unit vectors. The expectation value of the product of the two particles' spin components measured along $\mathbf{\hat{u}}$ (particle 1) and $\mathbf{\hat{v}}$ (particle 2) is given by:
+\begin{equation*}
+  P(\mathbf{\hat{u}}, \mathbf{\hat{v}}) = \int \rho(\lambda) A_{\mathbf{\hat{u}}}(\lambda) B_{\mathbf{\hat{v}}}(\lambda) d\lambda
+\end{equation*}
+where $\rho(\lambda)$ is the probability distribution of $\lambda$. Let $\mathbf{\hat{w}}$ be another unit vector, Bell's inequality is then the following:
+\begin{equation}
+  \left| P(\mathbf{\hat{u}}, \mathbf{\hat{v}}) - P(\mathbf{\hat{u}}, \mathbf{\hat{w}}) \right| - P(\mathbf{\hat{v}}, \mathbf{\hat{w}}) \leq 1
+  \label{eq:bell-inequality}
+\end{equation}
+
+If we take $\mathbf{\hat{u}}$, $\mathbf{\hat{v}}$ and $\mathbf{\hat{w}}$ to lie in the $xy$ plane with azimuthal angles $0^\circ$, $60^\circ$ and $120^\circ$ respectively, quantum mechanics predicts:
+\begin{equation*}
+  \begin{split}
+    P(\mathbf{\hat{u}}, \mathbf{\hat{v}}) &= P(\mathbf{\hat{v}}, \mathbf{\hat{w}}) = -\frac{1}{2},\\
+    P(\mathbf{\hat{u}}, \mathbf{\hat{w}}) &= \frac{1}{2}.
+  \end{split}
+\end{equation*}
+Hence:
+\begin{equation*}
+  \left| P(\mathbf{\hat{u}}, \mathbf{\hat{v}}) - P(\mathbf{\hat{u}}, \mathbf{\hat{w}}) \right| - P(\mathbf{\hat{v}}, \mathbf{\hat{w}}) = \frac{3}{2},
+\end{equation*}
+in contradiction with Bell's inequality (\ref{eq:bell-inequality})
 \end{observation}
 
 
 \section{Adaptation of the previous results to systems of three spin-1/2 particles}
 \label{sec:adaptation-to-3-particles}
-Before moving on to present the main matter of this chapter we need to adapt some of the results obtained so far to systems consisting of more that two particles. In particular we will be concerned with systems of three entangled particles and thus we will limit our attention to this case.%is entangled relevant here?
+As we have anticipated in the introduction of this chapter, EPR premises contradict quantum mechanics when applied to systems of three particles. Before moving on to present the argument that leads to a contradiction we need to adapt some of the results obtained so far to systems consisting of three particles.
 
 Consider a system of three spin-1/2 particles in the spin state:
 \begin{equation}
