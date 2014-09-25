@@ -5,7 +5,7 @@ In this chapter we will present an argument to show that the criticism leveled a
 The first result of this type is due to John S. Bell and is presented in his work of 1964 \cite{Bell1964}. This thesis will not be concerned with Bell's reasoning but will rather illustrate a more recent argument that leads to the conclusion that EPR's premises are inconsistent when applied to systems of three particles. This argument was proposed by Daniel M. Greenberg, Michael A. Horne and Anton Zeilinger in 1989 \cite{ghz1989} (see also \cite{:/content/aapt/journal/ajp/58/12/10.1119/1.16243}).
 
 
-\section{Bell's formalization of EPR results}
+\section{Bell's formalization of EPR's results}
 This section serves us to introduce the notation we will use to expose the main matter of this chapter, no new result will be derived here.
 
 In the previous chapter starting from the assumptions of perfect correlation (\ref{itm:epr-perfect-correlation}), completeness (\ref{itm:epr-completeness}), reality (\ref{itm:epr-reality}) and locality (\ref{itm:epr-locality}) we proved the following results:
@@ -65,26 +65,28 @@ in contradiction with Bell's inequality (\ref{eq:bell-inequality})
 
 \section{Adaptation of the previous results to systems of three spin-1/2 particles}
 \label{sec:adaptation-to-3-particles}
-As we have anticipated in the introduction of this chapter, EPR premises contradict quantum mechanics when applied to systems of three particles. Before moving on to present the argument that leads to a contradiction we need to adapt some of the results obtained so far to systems consisting of three particles.
+As we have anticipated in the introduction to this chapter, the EPR premises contradict quantum mechanics when applied to systems of three particles. Before moving on to present the argument that leads to a contradiction we need to adapt some of the results obtained so far to such systems.
 
-Consider a system of three spin-1/2 particles in the spin state:
+Consider a system of three spin-1/2 particles in the state:
 \begin{equation}
   |\chi\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3 \right)
   \label{eq:ghz-state}
 \end{equation}
-where $|+\rangle_i$ and $|-\rangle_i$ are states of spin up and down along the $\mathbf{\hat{z}}$ direction respectively of particle $i = 1, 2, 3$.
-We are interested in the predictions of quantum mechanics for the results of experiments that measure a spin component of each particle, in particular we are interested in the following observables:
+where $|+\rangle_i$ and $|-\rangle_i$ are states of spin up and down along the $\mathbf{\hat{z}
+}$ direction respectively, of particle $i = 1, 2, 3$. 
+
+We are interested in the predictions of quantum mechanics for the results of experiments that measure a spin component of each particle. In particular we are interested in measurements of the $S_y$ spin component of two particles and the $S_x$ component of the remaining one. Such experiments correspond to the measurement of each observable in (one of) the following triplets:
 \begin{equation}
   \begin{split}
-    S_{1x} \times S_{2y} \times S_{3y}\\
-    S_{1y} \times S_{2x} \times S_{3y}\\
-    S_{1y} \times S_{2y} \times S_{3x}
+    \left( S_{1x} \times \mathbb{1}_2 \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times S_{2y} \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times \mathbb{1}_2 \times S_{3y} \right)\\
+    \left( S_{1y} \times \mathbb{1}_2 \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times S_{2x} \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times \mathbb{1}_2 \times S_{3y} \right)\\
+    \left( S_{1y} \times \mathbb{1}_2 \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times S_{2y} \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times \mathbb{1}_2 \times S_{3x} \right)
   \end{split}
-  \label{eq:xyy-observables}
+  \label{eq:xyy-observables-triplets}
 \end{equation}
-It is easy to show that for all of these quantum mechanics predicts with certainty (i.e. with probability equal to 1) the result $+ 1$ (the proof of this statement is given in Appendix \ref{app:spin-predictions}).
+where the $\times$ sign denotes the tensor product of operators and $\mathbb{1}_i$ is the identity operator on the spin space of particle $i = 1, 2, 3$.
 
-Once again we can observe that the result of a measurement on one of the particles can be predicted with certainty by an appropriate measurement on the other two particles (perfect correlation). If the particles are emitted at a source and move away from it in different directions, let's say in the $xy$ plane at $120^{\circ}$ form each other, the measurements can be made in places very far from each other. We are thus in a situation analogous to that envisaged by EPR for their argument and the assumptions (\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality}) can now be written in the form:%is it really just a form issue?
+It is easy to show that the result of a measurement on one of the particles can be predicted with certainty by appropriate measurements on the other two particles (see Appendix \ref{app:spin-predictions}). If the particles are emitted at a source and move away from it in different directions, let's say in the $xy$ plane at $120^{\circ}$ form each other, the measurements can be made in places very far from each other. We are thus in a situation analogous to that envisaged by EPR for their argument and the assumptions (\ref{itm:epr-perfect-correlation}), (\ref{itm:epr-completeness}), (\ref{itm:epr-reality}) and (\ref{itm:epr-locality}) can now be written in the form:%is it really just a form issue?
 
 \begin{enumerate}[label=(\alph*$'$)]
   %enumerated lists style
@@ -93,7 +95,7 @@ Once again we can observe that the result of a measurement on one of the particl
 \item \label{itm:epr-reality'} \textit{Reality:} Same as (\ref{itm:epr-reality}).
 \item \label{itm:epr-locality'} \textit{Locality:} Since at the time of measurement the three particles no longer interact, no real change can take place in one particle in consequence of anything that may be done to the other two.
 \end{enumerate}
-The EPR argument presented in section \ref{epr-argument} can then be adapted to these assumptions and thus we conclude that in this case too there exists a more complete specification of the physical reality. If once again we denote this more complete specification by $\lambda$ we also conclude that the results of spin component measurements on particles 1, 2 and 3, respectively $A$, $B$ and $C$, are functions of the spin component being measured and of $\lambda$:%dependence on component to uniform with previous section
+The EPR argument presented in \S \ref{epr-argument} can then be adapted to these assumptions and thus we conclude that in this case too there exists a more complete specification of the physical reality. If once again we denote this more complete specification by $\lambda$ we also conclude that the results of spin component measurements on particles 1, 2 and 3, respectively $A$, $B$ and $C$, are functions of the spin component being measured and of $\lambda$:%dependence on component to uniform with previous section
 \begin{equation}
   \label{eq:results-abc}
   \begin{split}
@@ -112,10 +114,22 @@ In this case also, locality demands that $A$ doesn't depend on the spin componen
 \end{remark}
 
 
-\section{GHZ argument}
+\section{The GHZ argument}
+\label{sec:ghz-argument}
 We are now ready to prove the main result of this chapter. With the machinery introduced so far it will be a matter of a few lines.
 
-We have seen in the previous section that the state (\ref{eq:ghz-state}) is an eigenstate of the three observables (\ref{eq:xyy-observables}) with eigenvalue $+ 1$. The EPR argument adapted to the case of three particles in state (\ref{eq:ghz-state}) led us to the conclusion that there exist a more complete specification of the physical reality, $\lambda$, and three functions $A$, $B$ and $C$ that determine the results of spin component measurements on the particles. Thus (assuming again that quantum mechanics gives correct predictions):%is the part in brackets needed? GHZ comment on Bell: since EPR's argument for their program commenced with the perfect quantum mechanical correlations, it is essential that the expectation value of q.m. agrees with that of local-realism
+The EPR argument adapted to the case of three particles in state (\ref{eq:ghz-state}) led us to the conclusion that there exists a more complete specification of the physical reality, $\lambda$, and three functions $A$, $B$ and $C$ that determine the results of spin component measurements on the particles.
+
+Consider now a measurement of the product\footnote{Let us remark that what is measured is only the product of three spin components and not individual components.} of three spin components, one for each particle. In particular we are interested in the following observables:
+\begin{equation}
+  \begin{split}
+    &S_{1x} \times S_{2y} \times S_{3y}\\
+    &S_{1y} \times S_{2x} \times S_{3y}\\
+    &S_{1y} \times S_{2y} \times S_{3x}.
+  \end{split}
+  \label{eq:xyy-observables}
+\end{equation}
+State (\ref{eq:ghz-state}) is an eigenstate of the three observables (\ref{eq:xyy-observables}) with eigenvalue $+ 1$ (see Appendix \ref{app:spin-predictions}). Thus (assuming again that quantum mechanics gives correct predictions) we must have:%is the part in brackets needed? GHZ comment on Bell: since EPR's argument for their program commenced with the perfect quantum mechanical correlations, it is essential that the expectation value of q.m. agrees with that of local-realism
 \begin{equation}
   \begin{split}
     A_x B_y C_y = 1\\
@@ -126,7 +140,7 @@ We have seen in the previous section that the state (\ref{eq:ghz-state}) is an e
 \end{equation}
 where we have dropped the $\lambda$ in the notation because we are holding it fixed from now on.
 
-If we considered a measurement of the $S_x$ spin component on all three particles the result of such a measurement would be given by $A_x B_x C_x$. Because $A_y^2 = 1$, and the same goes for $B$ and $C$, this can be obtained by multiplying together the three equations in (\ref{eq:xyy-local-realist-results}) yielding:
+If we considered a measurement of the product of the three particles' $S_x$ spin component the result of such a measurement would be given by $A_x B_x C_x$. Because $A_y^2 = 1$, and the same goes for $B$ and $C$, this can be obtained by multiplying together the three equations in (\ref{eq:xyy-local-realist-results}) yielding:
 \begin{equation}
   A_x B_x C_x = 1.
   \label{eq:xxx-local-realist-result}
@@ -136,7 +150,7 @@ However, the quantum mechanical prediction for the observable:
   S_{x1} \times S_{2x} \times S_{3x},
   \label{eq:xxx-observable}
 \end{equation}
-on the state of equation (\ref{eq:ghz-state}), is $- 1$ with probability equal to 1 (refer to Appendix \ref{app:spin-predictions}) in contrast to equation (\ref{eq:xxx-local-realist-result}).
+on the state of equation (\ref{eq:ghz-state}), is $- 1$ with probability equal to 1 (refer again to Appendix \ref{app:spin-predictions}) in contrast to equation (\ref{eq:xxx-local-realist-result}).
 
 We have thus obtained a contradiction that can be summarized in the following:
 \begin{theorem}
@@ -151,6 +165,13 @@ We have thus obtained a contradiction that can be summarized in the following:
 \begin{remark}
   We have seen in Remark \ref{rem:well-def-abc} that the functions $A$, $B$ and $C$ need to be well defined ``only'' on a subset of $\lambda$'s of measure unity. However, since finite unions of sets of measure zero also have measure zero, the equations in (\ref{eq:xyy-local-realist-results}) and (\ref{eq:xxx-local-realist-result}) also hold on a set of $\lambda$'s of measure one.
 \end{remark}
+
+%\begin{observation}
+%  \label{obs:product-vs-single}
+%  In the previous section we made use of the observables (\ref{eq:xyy-observables}) to predict the result of a spin component measurement of one particle by measuring first suitable spin components of the other two particles. Such measurements on the first two particles inevitably project state (\ref{eq:ghz-state}) into a factorized state. Yet, we stated in this section that the state (\ref{eq:ghz-state}) is an eigenstate of all observables (\ref{eq:xyy-observables}). Thus, a measurement of any of the observables (\ref{eq:xyy-observables}) shouldn't change the state of the system.
+%
+%  This apparent conflict is resolved by observing that the formalism doesn't take care of the collapse of the wavefunction. In the previous section we COLLAPSE IN THREE STEPS...
+%\end{observation}
 
 %\begin{observation}
 %  We could try to investigate further where exactly the conflict between quantum mechanics and the requests of locality and reality arises.

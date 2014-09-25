@@ -30,7 +30,47 @@ in units $\frac{\hbar}{2} = 1$. This operator can be diagonalized leading to the
 with eigenvalues $+ 1$ and $- 1$ respectively. Inverting the two equations (\ref{eq:sx-eingenvectors}) and substituting into (\ref{eq-singlet-state-z}) leads to the desired result.
 
 \section{Quantum mechanical predictions on GHZ states}
-We derive here the predictions of quantum mechanics of which we made use in Chapter \ref{chap:ghz-theorem}. Namely, we will show that the state of equation (\ref{eq:ghz-state}), i.e.:
+%\subsection{Perfect correlation in systems of three spin-1/2 particles}
+%Consider the state in (\ref{eq:ghz-state}), i.e.:
+%\begin{equation*}
+%  |\chi\rangle = |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3,
+%\end{equation*}
+%we will show here that the result of a measurement of either the $S_x$ or $S_y$ spin component on any of the three particles can be predicted with certainity by appropriate measurements on the other two.
+%
+%Consider for example a $S_y$ component measurement on particle 3, analogous arguments can be applied to the other combinations of particles and spin components.
+%
+%We start by measuring $S_x$ of particle 1, 
+%
+%\subsection{Measurements of the product of spin components on GHZ states}
+%The order in which we prove the results in this section is inverted with respect to the order in which they are used in Chapters \ref{chap:ghz-theorem}. This is because the first result used can be easily proved as a corollary of the second.
+
+\subsection{Perfect correlation in systems of three spin-1/2 particles}
+Consider three particles in the state:
+\begin{equation}
+  |\chi\rangle = |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3,
+  \label{eq:ghz-state-app}
+\end{equation}
+we will show here that the result of a measurement of either the $S_x$ or $S_y$ spin component on any of the three particles can be predicted with certainty by appropriate measurements on the other two.
+
+Let us take, for example, a $S_y$ spin component measurement on particle 3, analogous arguments can be applied to the other combinations of particles and spin components.
+
+To predict the result of this measurement we consider the first of the triples in (\ref{eq:xyy-observables-triplets}), that is:
+\begin{equation*}
+  \left( S_{1x} \times \mathbb{1}_2 \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times S_{2y} \times \mathbb{1}_3,~~~ \mathbb{1}_1 \times \mathbb{1}_2 \times S_{3y} \right).
+\end{equation*}
+We will show that after the first two observables in the triple are measured the third particle will be left in an eigenstate of the $\mathbb{1}_1 \times \mathbb{1}_2 \times S_{3y}$ observable.
+
+Writing the state (\ref{eq:ghz-state-app}) on a basis of eigenstates of the three observables in the triplet considered leads to:
+\begin{equation*}
+  \begin{split}
+    |\chi\rangle = \frac{1}{2} \left( i |\mathbf{\hat{x}}, +\rangle_1 |\mathbf{\hat{y}}, +\rangle_2 |\mathbf{\hat{y}}, -\rangle_3 + i |\mathbf{\hat{x}}, +\rangle_1 |\mathbf{\hat{y}}, -\rangle_2 |\mathbf{\hat{y}}, +\rangle_3 +\right.\\
+    \left. + |\mathbf{\hat{x}}, -\rangle_1 |\mathbf{\hat{y}}, +\rangle_2 |\mathbf{\hat{y}}, +\rangle_3 - |\mathbf{\hat{x}}, -\rangle_1 |\mathbf{\hat{y}}, -\rangle_2 |\mathbf{\hat{y}}, -\rangle_3 \right).
+  \end{split}
+\end{equation*}
+Thus to any of the four possible combinations of results for the first two measurements there corresponds only one possible result for the third observable.
+
+\subsection{Measurements of the product of spin components on GHZ states}
+We will show here that the state (\ref{eq:ghz-state}), i.e.:
 \begin{equation*}
   |\chi\rangle = |+\rangle_1 |+\rangle_2 |+\rangle_3 - |-\rangle_1 |-\rangle_2 |-\rangle_3
 \end{equation*}
