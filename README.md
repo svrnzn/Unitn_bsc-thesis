@@ -1,5 +1,5 @@
-unitn_bsc-thesis
+Unitn_bsc-thesis
 ================
 
-My Bsc of Physics final project
+My Physics Degree final project.
 
